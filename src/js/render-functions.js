@@ -13,9 +13,11 @@ export function createGallery(images) {
   const markup = images
     .map(
       ({ webformatURL, largeImageURL, tags }) => `
-      <a class="gallery__item" href="${largeImageURL}">
-        <img class="gallery__image" src="${webformatURL}" alt="${tags}" />
-      </a>`
+        <li class="gallery__item">
+          <a href="${largeImageURL}">
+            <img class="gallery__image" src="${webformatURL}" alt="${tags}" />
+          </a>
+        </li>`
     )
     .join('');
 

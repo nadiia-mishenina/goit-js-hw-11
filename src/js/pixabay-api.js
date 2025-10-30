@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const API_KEY = '52967670-3351bf06a7f07a2e608e7cced';
 const BASE_URL = 'https://pixabay.com/api/';
-const PER_PAGE = 40; // скільки зображень на сторінку
+const PER_PAGE = 40;
 
 export async function getImagesByQuery(query, page = 1) {
   try {
