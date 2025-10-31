@@ -55,8 +55,10 @@ body {
 /* ===== Галерея ===== */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
   justify-content: center;
 }
 
@@ -64,6 +66,8 @@ body {
   display: block;
   border-radius: 10px;
   overflow: hidden;
+  background: #fff;
+  border: 1px solid #ccc;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
@@ -78,6 +82,13 @@ body {
   height: 200px;
   object-fit: cover;
   display: block;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  font-size: 14px;
 }
 
 /* ===== Лоадер ===== */
